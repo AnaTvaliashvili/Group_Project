@@ -200,9 +200,17 @@ footer i {
 .justify-around {
     justify-content: space-around;
 }
+.justify-center {
+    justify-content: center;
+}
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
 }
+
 .grow-2 {
     display: flex;
     flex-grow: 2;
@@ -267,7 +275,7 @@ h1, p, a, span {
     color: black;
 }
 .bg-color {
-    background-color: palevioletred;
+    background-color: black;
 }
 /*  */
 
