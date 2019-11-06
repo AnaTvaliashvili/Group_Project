@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
+  <title>Ana's Hotel</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -25,10 +25,10 @@
       </div>
       <nav class="flex align-center">
         <ul class="flex justify-between align-center">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Explore</a></li>
           <li><a href="#">Rooms</a></li>
-          <li><a href="#">Amenities</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
           <li><a href="#">Meetings & Events</a></li>
           <li><button class="btn uppercase">book now</button></li>
         </ul>
@@ -37,7 +37,31 @@
   </header>
 
   <main>
-    <div class="temporary-main bg-cover">
+  	<div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/hotel-default.jpg" alt="hotel defaul view">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/pool.jpg" alt="view over the pool with palmtrees">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/restaurant.jpg" alt="hotel restaurant view">
+
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div class="dots-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </main>
 
@@ -106,6 +130,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/slideshow.js"></script>
 </body>
 
 </html>
